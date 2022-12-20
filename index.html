@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dylan Pettijohn | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="icon" type="image/x-icon" href="./Images/Icons/fabicon.png">
+</head>
+<body>
+    <div class="coverpage">
+        <div id="sticky">
+        <header id="header">
+            <a href="#"><p class="logo">Dylan Pettijohn</p></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a><i class="material-symbols-outlined">download</i>Download CV</a></li>
+                </ul>
+            </nav>
+        </header>
+        </div>
+    
+        <div class="pfpcontainer">
+            <!--<img id="pfp" src="Images/lmao.png">
+            <h1>Dylan Pettijohn</h1>
+            <h2>Student at Allen High School</h2>-->
+        </div>
+    </div>    
+
+    <div id="about">
+        <br><br>
+        <p class="symbol">&lt</p><p class="code">!DOCTYPE html</p><p class="symbol">&gt</p><br>
+        <p class="symbol">&lt</p><p class="code">html</p><p class="symbol">&gt</p><br>
+        <p class="symbol">&emsp;&lt</p><p class="code">head</p><p class="symbol">&gt</p><br>
+        <p class="symbol">&emsp;&emsp;&lt</p><p class="code">title</p><p class="symbol">&gt</p><p>About Me!</p><p class="symbol">&lt</p><p class="code">/title</p><p class="symbol">&gt</p><br>
+        <p class="symbol">&emsp;&lt</p><p class="code">/head</p><p class="symbol">&gt</p><br>
+
+        <p class="symbol">&emsp;&lt</p><p class="code">body</p><p class="symbol">&gt</p><br>
+
+        <p><p class="symbol">&emsp;&emsp;&lt</p><p class="code">h1</p><p class="symbol">&gt</p>Dylan Pettijohn<p class="symbol">&lt</p><p class="code">/h1</p><p class="symbol">&gt</p></p><br>
+        <p><p class="symbol">&emsp;&emsp;&lt</p><p class="code">h2</p><p class="symbol">&gt</p>Student, Software Engineer, Mechanical Engineer<p class="symbol">&lt</p><p class="code">/h2</p><p class="symbol">&gt</p></p><br>
+        <br>
+        <p><p class="symbol">&emsp;&emsp;&lt</p><p class="code">p</p><p class="symbol">&gt</p>
+        <p class="text">I'm currently a student at Allen High School, I've been interested in Computer Science since the 6th grade. My interests include back-end software design and development...</p>
+        <p class="symbol">&emsp;&emsp;&lt</p><p class="code">/p</p><p class="symbol">&gt</p></p><br>
+        <br>
+        <p class="symbol">&emsp;&emsp;&lt</p><p class="code">p</p><p class="symbol">&gt</p>
+        <br>
+        <p class="text">I'm on track to complete Allen High School's Computer Science endorsment as well as receive certifications in Swift, Python, JavaScript, Linux, and C++. I'm graduating with the class of 2024 and I'm looking to gain experience in a real scenario and work enviroment.</p>
+        <p class="symbol">&emsp;&emsp;&lt</p><p class="code">/p</p><p class="symbol">&gt</p><br>
+        <p class="symbol">&emsp;&lt</p><p class="code">/body</p><p class="symbol">&gt</p><br>
+        <p class="symbol">&lt</p><p class="code">/html</p><p class="symbol typewriter">&gt</p><br>
+        
+        <br><br>
+    </div>
+
+    <div id="skills">
+        <div id="tiles"></div>
+        <h1><u>My skills</u></h1>
+        <div id="skillsList">
+
+        </div>
+    </div>
+    
+    <div id="projects">
+        <div id="banner">
+            <h1>PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS</h1>
+        </div>
+        <br><br>
+    </div>
+    
+
+    <div id="contact">
+        <br><br><br>
+        <p id="title" class="magic">Contact Me</p>
+        <br>
+        <p><b>Email: </b><a class="magic" href="mailto:dylan@pettijohns.com">dylan@pettijohns.com</a></p>
+        <p><b>Phone: </b><a class="magic" href="tel:2148920371">214-892-0371</a></p>
+        <br>
+        <div id="buttons">
+            <div class="smButton" style="margin-left: 0 !important;"><a href="#"><img src="Images/Icons/linkedinicon.png"></a></div>
+            <div class="smButton"><a href="#"><img src="Images/Icons/githubicon.png"></a></div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        document.getElementById("header").style.cssText = "background-color:rgba(30,30,30,1);height:60px;padding: 0px 12% 0px;";
+    } else {
+        document.getElementById("header").style.cssText = "background-color:transparent;height:100px;padding: 10px 12% 0px";
+    }
+    }
+
+    
+</script>
+
+<script type="text/javascript" src="./index.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.rawgit.com/mrvautin/typewrite/master/dist/typewrite.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.js"></script>
+<script>
+    let colorI = 0;
+    let color = ["#673AB7", "seagreen"];
+
+    function change() {
+        console.log(colorI)
+        var docs = document.getElementsByClassName("smButton");
+        for (var i = 0; i < docs.length; i++) {
+            let doc = docs.item(i)
+            
+            doc.style.backgroundColor = color[colorI];
+            doc.style.borderColor = color[colorI];
+        }
+        
+        colorI = (colorI + 1) % color.length;
+    }
+    change()
+    setInterval(change, 6000)
+</script>

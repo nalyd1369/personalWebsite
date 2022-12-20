@@ -1,0 +1,339 @@
+:root {  
+    --seagreen: seagreen;
+    --violet: rgb(103, 58, 183);
+    --gray: rgb(30,30,30);
+}
+
+@font-face {
+    font-family: WaterResistant;
+    src: url(./Fonts/WaterResistant.ttf);
+}
+@font-face {
+    font-family: Unbounded;
+    src: url(./Fonts/Unbounded.ttf);
+}
+@font-face {
+    font-family: Consolas;
+    src: url(./Fonts/Consolas.ttf);
+}
+body, html {
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    scroll-behavior: smooth;
+}
+
+li, a, button {
+    font-family: Unbounded;
+    font-weight: 300;
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 12% 0px;
+    height: 100px;
+    transition: all 0.15s ease 0s;
+}
+
+#sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.logo {
+    cursor: pointer;
+    color: seagreen;
+    font-size: 32px;
+    font-family: WaterResistant;
+    text-shadow: 2px 2px 2px black;
+    font-weight: 700;
+
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0px 22px;
+    cursor: pointer;
+}
+
+.nav-links li a {
+    text-shadow: 0px 0px 2px rgb(60,60,60);
+    font-size: 22px;
+    font-weight: 700;
+    transition: all 0.15s ease 0s;
+}
+
+.nav-links li a:hover{
+    color: seagreen;
+}
+
+i {
+    vertical-align: bottom;
+}
+
+.coverpage {
+    background-image: url("Images/background.png");
+    height: 100%;
+    background-position: 50% 22%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*pfp code*/
+.pfpcontainer {
+    text-align: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#pfp {
+    margin: 0px;
+    width: 800px;
+    height: 800px;
+    object-fit: cover;
+}
+
+.pfpcontainer h1 {
+    padding-left: 15px;
+    padding-top: 42%;
+    font-size: 60px;
+}
+.pfpcontainer h2 {
+    margin-bottom: 5px;
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 40px;
+}
+
+/*about code*/
+#about {
+    font-family: Consolas;
+    min-height: 100px;
+    width: 60%;
+    padding-left: 15%;
+    padding-right: 25%;
+    background-color: var(--gray);
+    color: white;
+    font-size: 24px;
+    margin: 0px !important;
+    cursor: default;
+}
+
+#about p {
+    display: inline;
+}
+
+#about .text {
+    display: block;
+    margin: 0px 0px 0px 80px;
+}
+
+#about .symbol {
+    color: gray;
+}
+
+#about .code {
+    color: seagreen;
+}
+
+/*skills code*/
+#skills {
+    position: relative;
+    pointer-events: none;
+}
+
+#skills h1 {
+    position: absolute;
+    top: 50px;
+    left: 25px;
+    z-index: 10;
+    color: seagreen;
+    font-size: 32px;
+    font-family: Unbounded;
+}
+
+#skillsList {
+    position: absolute;
+    top: 3%;
+    bottom: 3%;
+    right: 5%;
+    height: 94%;
+    width: 50%;
+    border-radius: 10%;
+    float: right;
+    background-color: var(--gray);
+}
+
+/*projects code*/
+#projects {
+    height: 600px;
+    background-color: var(--gray);
+    margin: 0;
+}
+
+#banner {
+    border-bottom: 2px solid seagreen;
+    margin: 0px 10% 0px 10%;
+}
+
+#projects #banner h1 {
+    margin: 0px -15% 0px -15%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+    color: seagreen;
+    font-family: Consolas;
+    font-size: 24px;
+    line-height: 50px;
+}
+
+/*contact code*/
+#contact {
+    text-align: center;
+    cursor: default;
+    height: 450px;
+    background-color: black;
+    background-image: url(./Images/map-image.png);
+    vertical-align: middle;
+}
+
+#contact h2, #contact p {
+    color: white;
+    font-family: Unbounded;
+}
+#contact #title {
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+#contact p {
+    font-size: 24px;
+}
+
+#contact a {
+    font-size: 24px;
+    font-weight: 500;
+    color: seagreen;
+}
+
+.smButton {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 2%;
+
+    transition: all 6s linear 0s;
+
+    border: 5px solid seagreen;
+    background-color: seagreen;
+
+}
+
+#buttons img {
+    height: 3rem;
+    width: 3rem;
+    padding-top: 0.5rem;
+}
+
+/*animation keyframes*/
+@keyframes background-pan {
+    from {
+        background-position: 0% center;
+    }
+    to {
+        background-position: -200% center;
+    }
+}
+
+/*Skills background animation*/
+#tiles {
+    height: 700px;
+    width: 100%;
+    position: relative;
+    pointer-events: auto;
+
+    
+    display: grid;
+    grid-template-columns: repeat(var(--columns), 1fr);
+    grid-template-rows: repeat(var(--rows), 1fr);
+
+    animation: background-pan 12s linear infinite;
+    background: linear-gradient(
+        to right,
+        var(--seagreen),
+        var(--violet),
+        var(--seagreen)
+    );
+    background-size: 200%;
+    overflow: hidden;
+    margin: 0px;
+    z-index: -1;
+}
+
+#tiles.toggled {
+    animation: none;
+}
+
+.tile {
+    cursor: pointer;
+    position: relative;
+}
+
+.tile:hover:before {
+    background-color: rgb(30, 30, 30);
+}
+
+.tile:before {
+    background-color: rgb(15, 15, 15);
+    content: "";
+    inset: 0.5px;
+    position: absolute;
+}
+
+/*magic text animation*/
+.magic {
+    animation: background-pan 12s linear infinite;
+    background: linear-gradient(
+        to right,
+        var(--seagreen),
+        var(--violet),
+        var(--seagreen)
+    );
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap;
+}
+
+/*type-writer*/
+
+.typewriter {
+    border-right: .15em solid gray; /* The typwriter cursor */
+    animation: 
+        blink-caret 1.25s step-end infinite;
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: gray; }
+  }
