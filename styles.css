@@ -181,21 +181,25 @@ i {
 
 /*projects code*/
 #projects {
+    position: relative;
     height: 600px;
     background-color: var(--gray);
     margin: 0;
 }
 
-#banner {
+#seperator {
     border-bottom: 2px solid seagreen;
+    width: 80%;
+    margin-left: 10%;
     margin: 0px 10% 0px 10%;
 }
 
-#projects #banner h1 {
-    margin: 0px -15% 0px -15%;
+#projects h1 {
+    display: flex;
+    margin: 0;
     white-space: nowrap;
     overflow: hidden;
-    text-align: center;
+    justify-content: center;
     color: seagreen;
     font-family: Consolas;
     font-size: 24px;
