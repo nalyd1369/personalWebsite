@@ -95,29 +95,18 @@ i {
 /*pfp code*/
 .pfpcontainer {
     text-align: center;
-    height: 100vh;
+    height: 100%;
     margin: 0;
 }
 
-#pfp {
-    margin: 0px;
-    width: 800px;
-    height: 800px;
-    object-fit: cover;
-}
-
 .pfpcontainer h1 {
-    padding-left: 15px;
-    padding-top: 42%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Unbounded;
     font-size: 60px;
-}
-.pfpcontainer h2 {
-    margin-bottom: 5px;
-    position: absolute;
-    z-index: 0;
-    bottom: 0;
-    width: 100%;
-    font-size: 40px;
 }
 
 /*about code*/
@@ -182,7 +171,7 @@ i {
 /*projects code*/
 #projects {
     position: relative;
-    height: 600px;
+    height: 700px;
     background-color: var(--gray);
     margin: 0;
 }
@@ -204,6 +193,34 @@ i {
     font-family: Consolas;
     font-size: 24px;
     line-height: 50px;
+}
+
+#projects #items {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    max-width: 924px;
+    width: calc(100% - 20px);
+    margin-left: calc((100% - 924px)/2);
+}
+
+#projects .card{
+    background-color: rgba(255,255,255,0.02);
+    border: 1px solid rgba(255,255,255,0.1);
+    cursor: pointer;
+    height: 260px;
+    width: 300px;
+    border-radius: 10px;
+    transition: all .15s ease 0s;
+}
+
+#projects .card:hover {
+    height: 270px;
+    width: 310px;
+
+    background-color: rgba(255,255,255,0.01);
+    border: 1px solid rgba(255,255,255,0.2);
 }
 
 /*contact code*/
