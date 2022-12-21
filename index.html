@@ -16,11 +16,11 @@
             <a href="#"><p class="logo">Dylan Pettijohn</p></a>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a><i class="material-symbols-outlined">download</i>Download CV</a></li>
+                    <li><a class="expanded" href="#about">About</a></li>
+                    <li><a class="expanded" href="#skills">Skills</a></li>
+                    <li><a class="expanded" href="#projects">Projects</a></li>
+                    <li><a class="expanded" href="#contact">Contact</a></li>
+                    <li><a class="expanded"><i class="material-symbols-outlined">download</i>Download CV</a></li>
                 </ul>
             </nav>
         </header>
@@ -100,11 +100,23 @@
 
     function scrollFunction() {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-        document.getElementById("header").style.cssText = "background-color:rgba(30,30,30,1);height:60px;padding: 0px 12% 0px;";
+        document.getElementById("header").style.cssText = "background-color:rgba(30,30,30,1);height:60px;padding: 0px 14% 0px;";
+        
+        let array = document.querySelectorAll('.nav-links li a');
+        for (var e = 0; e < array.length; e++) {
+            array[e].classList.add("collapsed")
+            array[e].classList.remove("expanded")
+        }
     } else {
-        document.getElementById("header").style.cssText = "background-color:transparent;height:100px;padding: 10px 12% 0px";
+        document.getElementById("header").style.cssText = "background-color:transparent;height:100px;padding: 1% 14% 0px";
+        
+        let array = document.querySelectorAll('.nav-links li a');
+        for (var e = 0; e < array.length; e++) {
+            array[e].classList.add("expanded")
+            array[e].classList.remove("collapsed")
+        }
     }
-    }
+}
 
     
 </script>
@@ -118,7 +130,6 @@
     let color = ["#673AB7", "seagreen"];
 
     function change() {
-        console.log(colorI)
         var docs = document.getElementsByClassName("smButton");
         for (var i = 0; i < docs.length; i++) {
             let doc = docs.item(i)
