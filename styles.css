@@ -2,6 +2,9 @@
     --seagreen: seagreen;
     --violet: rgb(103, 58, 183);
     --gray: rgb(30,30,30);
+    --seagreenO: rgba(46, 139, 87, 0.3);
+    --violetO: rgba(103, 58, 183, 0.3);
+    --grayO: rgba(255,255,255,0.02);
 }
 
 @font-face {
@@ -225,18 +228,64 @@ i {
 }
 
 #projects .card{
-    background-color: rgba(255,255,255,0.02);
+    position: relative;
+    background-image: url(./Images/background.png);
+    background-color: rgba(255,255,255,0.03);
     border: 1px solid rgba(255,255,255,0.1);
     cursor: pointer;
     height: 300px;
     width: 400px;
     border-radius: 10px;
-    transition: all .15s ease 0s;
+    transition: all 0.5s;
+    overflow: hidden;
 }
 
 #projects .card:hover {
-    background-color: rgba(255,255,255,0.01);
-    border: 1px solid rgba(255,255,255,0.2);
+    background-color: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.card h2 {
+    font-size: 32px;
+    color: seagreen;
+    font-family: Unbounded;
+    padding-left: 25px;
+    line-height: 75px;
+    margin: 210px 0px 0px 0px;
+    padding-bottom: 15px;
+    background: linear-gradient(
+        to top,
+        rgba(0,0,0,.8),
+        rgba(0,0,0,0)
+    );
+    background-position-y: 0px;
+    background-repeat: no-repeat;
+    transition: background-position-y .3s ease-in 0s, margin-top .15s ease-in .2s;
+}
+.card:hover h2 {
+    background-position-y: 100px;
+    font-size: 32px;
+    color: seagreen;
+    font-family: Unbounded;
+    line-height: 75px;
+    margin-top: 30px;
+}
+
+
+.card .click {
+    position: absolute;
+    text-align: center;
+    width: 400px;
+    height: 40px;
+    left: 0px;
+    bottom: 0px;
+    font-family: Unbounded;
+    font-size: 24px;
+    transition: all .15s ease .25s;
+    color: rgba(46, 139, 87, 0);
+}
+.card:hover .click {
+    color: rgba(46, 139, 87, 1);
 }
 
 /*contact code*/
