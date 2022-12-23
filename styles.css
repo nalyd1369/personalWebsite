@@ -250,7 +250,7 @@ i {
     flex-wrap: wrap;
     gap: 10px;
     width: 80%;
-    max-width: 1300px;
+    max-width: 2000px;
     justify-content: center;
     overflow: hidden;
 }
@@ -269,8 +269,8 @@ i {
     background-color: rgba(255,255,255,0.03);
     border: 1px solid rgba(255,255,255,0.1);
     cursor: pointer;
-    height: 300px;
-    width: 400px;
+    height: 35vh;
+    width: 30%;
     border-radius: 10px;
     transition: all 0.5s;
     overflow: hidden;
