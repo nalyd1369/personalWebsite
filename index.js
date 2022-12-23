@@ -45,8 +45,10 @@ const createGrid = () => {
   wrapper.innerHTML = "";
   
   var size = 30;
-  if (wrapper.clientWidth > 2000) {
-    size = 80
+  if (wrapper.clientWidth > 3500) {
+    size = 160
+  } else if (wrapper.clientWidth > 2000) {
+    size = 70
   } else if (wrapper.clientWidth > 800) {
     size = 40
   }
