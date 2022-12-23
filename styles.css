@@ -91,7 +91,7 @@ header {
 }
 
 .collapsed:hover {
-    color: black;
+    color: white;
 }
 
 i {
@@ -163,25 +163,61 @@ i {
 #skills h1 {
     position: absolute;
     top: 50px;
-    left: 25px;
+    left: 40px;
     z-index: 10;
     color: seagreen;
-    font-size: 32px;
+    font-size: 50px;
     font-family: Unbounded;
 }
 
-#skillsList {
+#skillsBox {
     position: absolute;
-    top: 3%;
-    bottom: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 20px;
+    align-items: center;
+    justify-content: center;
+    top: 7%;
+    bottom: 7%;
     right: 5%;
-    height: 94%;
-    width: 50%;
+    width: 60%;
+    padding: 2%;
     border-radius: 10%;
     float: right;
     background-color: var(--gray);
+    overflow: hidden;
 }
 
+#skillsBox .skill {
+    margin: 0;
+    width: 30%;
+    max-width: 400px;
+    min-width: 300px;
+    height: 40%;
+    background-color: rgb(15, 15, 15);
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#skillsBox .skill img {
+    width: 40%;
+    height: 40%;
+    border-radius: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+#skillsBox .skill p {
+    margin: 0;
+    padding: 0px 5% 0px 5%;
+    width: 90%;
+    height: 40%;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    font-family: Unbounded;
+}
 /*projects code*/
 #projects {
     position: relative;
@@ -352,7 +388,7 @@ i {
 
 /*Skills background animation*/
 #tiles {
-    height: 700px;
+    height: 800px;
     width: 100%;
     position: relative;
     pointer-events: auto;
