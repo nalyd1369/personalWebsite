@@ -68,7 +68,7 @@ li, a, button {
 .logo {
     cursor: pointer;
     color: seagreen;
-    font-size: 1.6vw;
+    font-size: calc(24px + .5vw);
     min-width: 275px;
     font-family: WaterResistant;
     text-shadow: 2px 2px 2px black;
@@ -87,7 +87,7 @@ li, a, button {
 }
 
 .expanded{
-    font-size: 1.2vw;
+    font-size: calc(18px + .4vw);
     font-weight: 800;
     transition: all 0.15s ease 0s;
     color: black;
@@ -134,7 +134,7 @@ i {
     justify-content: center;
     align-items: center;
     font-family: Unbounded;
-    font-size: 3vw;
+    font-size: calc(45px + .5vw);
 }
 
 /*about code*/
@@ -146,7 +146,7 @@ i {
     padding-right: 25%;
     background-color: var(--gray);
     color: white;
-    font-size: 1.6vw;
+    font-size: calc(20px + .3vw);
     margin: 0px !important;
     cursor: default;
 }
