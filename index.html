@@ -41,8 +41,8 @@
 
         <p class="symbol">&emsp;&lt</p><p class="code">body</p><p class="symbol">&gt</p><br>
 
-        <p><p class="symbol">&emsp;&emsp;&lt</p><p class="code">h1</p><p class="symbol">&gt</p>Dylan Pettijohn<p class="symbol">&lt</p><p class="code">/h1</p><p class="symbol">&gt</p></p><br>
-        <p><p class="symbol">&emsp;&emsp;&lt</p><p class="code">h2</p><p class="symbol">&gt</p>Student, Software Engineer, Mechanical Engineer<p class="symbol">&lt</p><p class="code">/h2</p><p class="symbol">&gt</p></p><br>
+        <p><p class="symbol">&emsp;&emsp;&lt</p><p class="code">h1</p><p class="symbol">&gt</p><p class="text">Dylan Pettijohn</p><p class="symbol">&emsp;&emsp;&lt</p><p class="code">/h1</p><p class="symbol">&gt</p></p><br>
+        <p><p class="symbol">&emsp;&emsp;&lt</p><p class="code">h2</p><p class="symbol">&gt</p><p class="text">Student, Software Engineer, Mechanical Engineer</p><p class="symbol">&emsp;&emsp;&lt</p><p class="code">/h2</p><p class="symbol">&gt</p></p><br>
         <br>
         <p><p class="symbol">&emsp;&emsp;&lt</p><p class="code">p</p><p class="symbol">&gt</p>
         <p class="text">I'm currently a student at Allen High School, I've been interested in Computer Science since the 6th grade. My interests include back-end software design and development...</p>
@@ -83,26 +83,32 @@
                 <p class="descrip">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec blandit felis, sed placerat nibh. Nam facilisis dui at dolor fringilla, quis euismod nunc.</p>
             </div>
             <div class="skill">
-                <img src="./Images/map-image.png">
+                <img src="./Images/archery.png">
                 <p class="descrip">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec blandit felis, sed placerat nibh. Nam facilisis dui at dolor fringilla, quis euismod nunc.</p>
             </div>
         </div>
     </div>
     
     <div id="projects"> 
-        <h1>PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS</h1>
+        <h1 id="scrollBar">PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS&emsp;PROJECTS</h1>
         <div id="seperator"></div>
         <div id="center">
             <div id="items">
                 <div class="card">
+                    <button class="openModal" data-micromodal-trigger="modal1"></button>
                     <h2>Dumpster Fire</h2>
                     <h3 class="click">Click for more</h3>
                 </div>
-                <div class="card"><h2>This website</h2><h3 class="click">Click for more</h3></div>
-                <div class="card"><h2>Dumpster Fire</h2><h3 class="click">Click for more</h3></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
+                <div class="card">
+                    <button class="openModal" data-micromodal-trigger="modal2"></button>
+                    <h2>Driving App</h2>
+                    <h3 class="click">Click for more</h3>
+                </div>
+                <div class="card">
+                    <button class="openModal" data-micromodal-trigger="modal3"></button>
+                    <h2>Personal Website</h2>
+                    <h3 class="click">Click for more</h3>
+                </div>
             </div>
         </div>
     </div>
@@ -116,10 +122,61 @@
         <p><b>Phone: </b><a class="magic" href="tel:2148920371">214-892-0371</a></p>
         <br>
         <div id="buttons">
-            <div class="smButton" style="margin-left: 0 !important;"><a href="#"><img src="Images/Icons/linkedinicon.png"></a></div>
-            <div class="smButton"><a href="#"><img src="Images/Icons/githubicon.png"></a></div>
+            <div class="smButton" style="margin-left: 0 !important;"><a target="_blank" href="https://www.linkedin.com/in/dylan-pettijohn-08678b25b/"><img src="Images/Icons/linkedinicon.png"></a></div>
+            <div class="smButton"><a target="_blank" href="https://github.com/nalyd1369/"><img src="Images/Icons/githubicon.png"></a></div>
         </div>
     </div>
+
+    <div id="modals">
+            <!-- [Modal 1] -->
+        <div class="modal" id="modal1" aria-hidden="true">
+            <div tabindex="-1" data-micromodal-close>
+                <div role="dialog" aria-modal="true" aria-labelledby="modal-1-title" >
+                    <header>
+                        <h2 class="title">Dumpster Fire</h2>
+                        <button class="modal__close" aria-label="Close modal" data-micromodal-close>X</button>
+                    </header>
+                </div>
+                <div id="modal-1-content">
+                    <img src="./Images/dumpsterFire.png">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean aliquam placerat scelerisque. Proin sed feugiat purus. Etiam gravida neque ac orci auctor bibendum. Nam iaculis lacus massa, et rutrum elit vehicula porttitor. Vestibulum ultricies nec nibh sit amet malesuada. Pellentesque aliquet pellentesque pulvinar. Sed eget elit sagittis nisi semper hendrerit a et ante. Maecenas eu magna vitae risus vehicula hendrerit at venenatis mi. Mauris purus enim, volutpat eget neque in, suscipit pharetra felis. Pellentesque porttitor commodo enim a hendrerit. Proin dignissim lectus sit amet dui auctor, sit amet cursus diam euismod. Morbi tempus, mi id feugiat gravida, nunc orci faucibus ligula, vel pharetra erat nisi sed turpis. Etiam iaculis orci eget elit aliquet egestas. Sed sit amet condimentum mauris. Morbi eu scelerisque erat. Praesent ac nisi sem.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- [Modal 2] -->
+        <div class="modal" id="modal2" aria-hidden="true">
+            <div tabindex="-1" data-micromodal-close>
+                <div role="dialog" aria-modal="true" aria-labelledby="modal-1-title" >
+                    <header>
+                        <h2 class="title">Driving App</h2>
+                        <button class="modal__close" aria-label="Close modal" data-micromodal-close>X</button>
+                    </header>
+                </div>
+                <div id="modal-1-content">
+                    <img src="./Images/javascript.png">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean aliquam placerat scelerisque. Proin sed feugiat purus. Etiam gravida neque ac orci auctor bibendum. Nam iaculis lacus massa, et rutrum elit vehicula porttitor. Vestibulum ultricies nec nibh sit amet malesuada. Pellentesque aliquet pellentesque pulvinar. Sed eget elit sagittis nisi semper hendrerit a et ante. Maecenas eu magna vitae risus vehicula hendrerit at venenatis mi. Mauris purus enim, volutpat eget neque in, suscipit pharetra felis. Pellentesque porttitor commodo enim a hendrerit. Proin dignissim lectus sit amet dui auctor, sit amet cursus diam euismod. Morbi tempus, mi id feugiat gravida, nunc orci faucibus ligula, vel pharetra erat nisi sed turpis. Etiam iaculis orci eget elit aliquet egestas. Sed sit amet condimentum mauris. Morbi eu scelerisque erat. Praesent ac nisi sem.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- [Modal 3] -->
+        <div class="modal" id="modal3" aria-hidden="true">
+            <div tabindex="-1" data-micromodal-close>
+                <div role="dialog" aria-modal="true" aria-labelledby="modal-1-title" >
+                    <header>
+                        <h2 class="title">Personal Website</h2>
+                        <button class="modal__close" aria-label="Close modal" data-micromodal-close>X</button>
+                    </header>
+                </div>
+                <div id="modal-1-content">
+                    <img src="./Images/map-image.png">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean aliquam placerat scelerisque. Proin sed feugiat purus. Etiam gravida neque ac orci auctor bibendum. Nam iaculis lacus massa, et rutrum elit vehicula porttitor. Vestibulum ultricies nec nibh sit amet malesuada. Pellentesque aliquet pellentesque pulvinar. Sed eget elit sagittis nisi semper hendrerit a et ante. Maecenas eu magna vitae risus vehicula hendrerit at venenatis mi. Mauris purus enim, volutpat eget neque in, suscipit pharetra felis. Pellentesque porttitor commodo enim a hendrerit. Proin dignissim lectus sit amet dui auctor, sit amet cursus diam euismod. Morbi tempus, mi id feugiat gravida, nunc orci faucibus ligula, vel pharetra erat nisi sed turpis. Etiam iaculis orci eget elit aliquet egestas. Sed sit amet condimentum mauris. Morbi eu scelerisque erat. Praesent ac nisi sem.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
 
@@ -145,14 +202,37 @@
         }
     }
 }
-
-    
 </script>
 
 <script type="text/javascript" src="./index.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script type="text/javascript" src="https://cdn.rawgit.com/mrvautin/typewrite/master/dist/typewrite.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.js"></script>
+<script type="text/javascript" src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+<script>
+    MicroModal.init({
+        onShow: modal => console.info(`${modal.id} is shown`), // [1]
+        onClose: modal => console.info(`${modal.id} is hidden`), // [2]
+        openTrigger: 'data-micromodal-trigger', // [3]
+        closeTrigger: 'data-micromodal-close', // [4]
+        disableScroll: true, // [5]
+        disableFocus: false, // [6]
+        awaitCloseAnimation: false, // [7]
+        debugMode: true // [8]
+    });
+
+    window.addEventListener('click', function(e){   
+        console.log(e.target.className)
+        if(document.getElementById('modals').contains(e.target) || e.target.className == "openModal"){
+            return
+        } else {
+            MicroModal.close("modal1")
+            MicroModal.close("modal2")
+            MicroModal.close("modal3")
+        }
+    });
+</script>
+
 <script>
     let colorI = 0;
     let color = ["#673AB7", "seagreen"];
