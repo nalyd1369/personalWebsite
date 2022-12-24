@@ -87,6 +87,7 @@ li, a, button {
 }
 
 .expanded{
+    height: 10%;
     font-size: calc(18px + .4vw);
     font-weight: 800;
     transition: all 0.15s ease 0s;
@@ -98,6 +99,7 @@ li, a, button {
 }
 
 .collapsed {
+    height: 5%;
     font-size: calc(18px + .4vw);
     font-weight: 800;
     transition: all 0.15s ease 0s;
@@ -234,7 +236,7 @@ i {
     height: 40%;
     color: white;
     text-align: center;
-    font-size: calc(12px + .2vw);
+    font-size: calc(10px + .4vw);
     font-family: Unbounded;
 }
 /*projects code*/
@@ -270,7 +272,7 @@ i {
     justify-content: center;
     color: seagreen;
     font-family: Consolas;
-    font-size: calc(16px + .3vw);
+    font-size: calc(12px + .5vw);
     line-height: 60px;
     animation: scrollbar 60s linear infinite;
 }
@@ -376,7 +378,8 @@ i {
 #contact {
     text-align: center;
     cursor: default;
-    height: 450px;
+    height: 50vh;
+    min-height: 450px;
     background-color: black;
     background-image: url(./Images/map-image.png);
     vertical-align: middle;
@@ -390,37 +393,35 @@ i {
     margin-left: auto;
     margin-right: auto;
     display: inline-block;
-    font-size: 32px;
+    font-size: calc(25px + .5vw);
     font-weight: 700;
 }
 
 #contact p {
-    font-size: 24px;
+    font-size: calc(20px + .4vw);
 }
 
 #contact a {
-    font-size: 24px;
+    font-size: calc(20px + .4vw);
     font-weight: 500;
     color: seagreen;
 }
 
 .smButton {
-    height: 4rem;
-    width: 4rem;
+    height: 8vh;
+    width: 8vh;
     border-radius: 50%;
     display: inline-block;
     margin-left: 2%;
-
     transition: all 6s linear 0s;
-
     border: 5px solid seagreen;
     background-color: seagreen;
 
 }
 
 #buttons img {
-    height: 3rem;
-    width: 3rem;
+    height: 6vh;
+    width: 6vh;
     padding-top: 0.5rem;
 }
 

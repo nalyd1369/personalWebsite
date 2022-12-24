@@ -200,7 +200,7 @@
 
     function scrollFunction() {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-        document.getElementById("header").style.cssText = "background-color:rgba(30,30,30,1);height:60px;padding: 0px 14% 0px;";
+        document.getElementById("header").style.cssText = "background-color:rgba(30,30,30,1);padding: 0px 14% 0px;";
         
         let array = document.querySelectorAll('.nav-links li a');
         for (var e = 0; e < array.length; e++) {
@@ -208,7 +208,7 @@
             array[e].classList.remove("expanded")
         }
     } else {
-        document.getElementById("header").style.cssText = "background-color:transparent;height:100px;padding: 1% 14% 0px";
+        document.getElementById("header").style.cssText = "background-color:transparent;padding: 1% 14% 0px";
         
         let array = document.querySelectorAll('.nav-links li a');
         for (var e = 0; e < array.length; e++) {
