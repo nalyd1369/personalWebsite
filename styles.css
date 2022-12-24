@@ -69,7 +69,7 @@ li, a, button {
 .logo {
     cursor: pointer;
     color: seagreen;
-    font-size: 32px;
+    font-size: 1.6vw;
     min-width: 275px;
     font-family: WaterResistant;
     text-shadow: 2px 2px 2px black;
@@ -88,7 +88,7 @@ li, a, button {
 }
 
 .expanded{
-    font-size: 22px;
+    font-size: 1.2vw;
     font-weight: 800;
     transition: all 0.15s ease 0s;
     color: black;
@@ -352,7 +352,7 @@ i {
     transition: all .15s ease 0s;
 }
 .card:hover .descrip {
-    font-size: 0px;
+    padding-left: 25px;
 }
 
 
