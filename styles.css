@@ -54,7 +54,7 @@ li, a, button {
     justify-content: space-between;
     align-items: center;
     padding: 1% 14% 0px;
-    height: 100px;
+    height: 8vh;
     transition: all 0.15s ease 0s;
 }
 
@@ -73,11 +73,13 @@ li, a, button {
     font-family: WaterResistant;
     text-shadow: 2px 2px 2px black;
     font-weight: 700;
+    line-height: 5vh;
 
 }
 
 .nav-links {
     list-style: none;
+    margin: 0;
 }
 
 .nav-links li {
@@ -87,8 +89,7 @@ li, a, button {
 }
 
 .expanded{
-    height: 10%;
-    font-size: calc(18px + .4vw);
+    font-size: calc(18px + .3vw);
     font-weight: 800;
     transition: all 0.15s ease 0s;
     color: black;
@@ -99,8 +100,7 @@ li, a, button {
 }
 
 .collapsed {
-    height: 5%;
-    font-size: calc(18px + .4vw);
+    font-size: calc(18px + .3vw);
     font-weight: 800;
     transition: all 0.15s ease 0s;
     color: seagreen;
@@ -111,13 +111,13 @@ li, a, button {
 }
 
 i {
-    font-size: calc(18px + .4vw) !important;
+    font-size: calc(18px + .3vw) !important;
     vertical-align: bottom;
 }
 
 .coverpage {
-    background-image: url("Images/background.png");
-    height: 100%;
+    background-image: url("Images/background.jpg");
+    height: 75%;
     background-position: 50% 22%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -143,13 +143,12 @@ i {
 /*about code*/
 #about {
     font-family: Consolas;
-    min-height: 100px;
     width: 60%;
     padding-left: 15%;
     padding-right: 25%;
     background-color: var(--gray);
     color: white;
-    font-size: calc(20px + .3vw);
+    font-size: calc(20px + .2vw);
     margin: 0px !important;
     cursor: default;
 }

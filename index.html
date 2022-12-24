@@ -54,7 +54,6 @@
         <p class="symbol">&emsp;&emsp;&lt</p><p class="code">/p</p><p class="symbol">&gt</p><br>
         <p class="symbol">&emsp;&lt</p><p class="code">/body</p><p class="symbol">&gt</p><br>
         <p class="symbol">&lt</p><p class="code">/html</p><p class="symbol typewriter">&gt</p><br>
-        
         <br><br>
     </div>
 
@@ -200,7 +199,7 @@
 
     function scrollFunction() {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-        document.getElementById("header").style.cssText = "background-color:rgba(30,30,30,1);padding: 0px 14% 0px;";
+        document.getElementById("header").style.cssText = "background-color:rgba(30,30,30,1);height: 8vh;padding: 0px 14% 0px;";
         
         let array = document.querySelectorAll('.nav-links li a');
         for (var e = 0; e < array.length; e++) {
@@ -208,7 +207,7 @@
             array[e].classList.remove("expanded")
         }
     } else {
-        document.getElementById("header").style.cssText = "background-color:transparent;padding: 1% 14% 0px";
+        document.getElementById("header").style.cssText = "background-color:transparent;height: 5vh;padding: 1% 14% 0px";
         
         let array = document.querySelectorAll('.nav-links li a');
         for (var e = 0; e < array.length; e++) {
