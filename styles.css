@@ -305,6 +305,7 @@ i {
     border: 2px solid rgb(40,40,40);
     height: 35vh;
     width: 30%;
+    min-width: 400px;
     border-radius: 10px;
     transition: all 0.5s;
     overflow: hidden;
@@ -319,11 +320,12 @@ i {
 .card h2 {
     position: absolute;
     font-size: 32px;
+    white-space: nowrap;
     color: seagreen;
     font-family: Unbounded;
     pointer-events: none;
     margin: 0;
-    width: calc(100% - 10px);
+    width: calc(100% - 20px);
     line-height: 75px;
     padding-top: 25px;
     padding-left: 20px;
@@ -348,9 +350,9 @@ i {
     font-family: Unbounded;
     pointer-events: none;
     margin: 0;
-    width: calc(100% - 10px);
     padding-top: 100px;
     padding-left: 20px;
+    padding-right: 20px;
     transition: all .15s ease 0s;
 }
 .card:hover .descrip {
