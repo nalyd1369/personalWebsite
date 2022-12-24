@@ -98,7 +98,7 @@ li, a, button {
 }
 
 .collapsed {
-    font-size: 22px;
+    font-size: calc(18px + .4vw);
     font-weight: 800;
     transition: all 0.15s ease 0s;
     color: seagreen;
@@ -109,6 +109,7 @@ li, a, button {
 }
 
 i {
+    font-size: calc(18px + .4vw) !important;
     vertical-align: bottom;
 }
 
@@ -181,7 +182,7 @@ i {
     z-index: -1;
     margin: 0;
     color: seagreen;
-    font-size: 60px;
+    font-size: calc(24px + 2vw);
     font-family: Unbounded;
 }
 
