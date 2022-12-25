@@ -67,35 +67,35 @@
             </div>
             <div class="skill">
                 <img src="./Images/html.png">
-                <p class="descrip">Used to create this website, as well as websites for my Discord Bot and friends.</p>
+                <p class="descrip">I've been working with the HTML5 stack to create this website, as well as websites for my Discord Bot and friends.</p>
             </div>
             <div class="skill">
                 <img src="./Images/nodejs.png">
-                <p class="descrip">The database for my Discord Bot.</p>
+                <p class="descrip">I used NodeJS to create the database for my Discord Bot.</p>
             </div>
             <div class="skill">
                 <img src="./Images/python.png">
-                <p class="descrip">I've used it for anything from web-scrapers to machine learning.</p>
+                <p class="descrip">I've used Python for anything from web-scrapers to machine learning.</p>
             </div>
             <div class="skill">
                 <img src="./Images/swift.png">
-                <p class="descrip">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec blandit felis, sed placerat nibh. Nam facilisis dui at dolor fringilla, quis euismod nunc.</p>
-            </div>
-            <div class="skill">
-                <img src="./Images/csharp.png">
-                <p class="descrip">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec blandit felis, sed placerat nibh. Nam facilisis dui at dolor fringilla, quis euismod nunc.</p>
+                <p class="descrip">I'm currently studying swift for my endorsment at Allen High School.</p>
             </div>
             <div class="skill">
                 <img src="./Images/unity.png">
-                <p class="descrip">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec blandit felis, sed placerat nibh. Nam facilisis dui at dolor fringilla, quis euismod nunc.</p>
+                <p class="descrip">Over the course of a year or so, I made many games experimenting with the Unity engine and having fun!</p>
+            </div>
+            <div class="skill">
+                <img src="./Images/csharp.png">
+                <p class="descrip">I learned C# in tandem with Unity to code my games.</p>
             </div>
             <div class="skill">
                 <img src="./Images/pc.png">
-                <p class="descrip">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec blandit felis, sed placerat nibh. Nam facilisis dui at dolor fringilla, quis euismod nunc.</p>
+                <p class="descrip">I'm proffecient in PC hardware and I've build a couple computers, including the one I'm developing the website on!</p>
             </div>
             <div class="skill">
                 <img src="./Images/archery.png">
-                <p class="descrip">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec blandit felis, sed placerat nibh. Nam facilisis dui at dolor fringilla, quis euismod nunc.</p>
+                <p class="descrip">I participated in Archery for 3 years, competing on the state team and placing top 5%.</p>
             </div>  
         </div>
     </div>
@@ -130,10 +130,10 @@
 
     <div id="contact">
         <br><br><br>
-        <p id="title" class="magic">Contact Me</p>
+        <p id="title">Contact Me</p>
         <br>
-        <p><b>Email: </b><a class="magic" href="mailto:dylan@pettijohns.com">dylan@pettijohns.com</a></p>
-        <p><b>Phone: </b><a class="magic" href="tel:2148920371">214-892-0371</a></p>
+        <p><b>Email: </b><a class="shiftColor" href="mailto:dylan@pettijohns.com">dylan@pettijohns.com</a></p>
+        <p><b>Phone: </b><a class="shiftColor" href="tel:2148920371">214-892-0371</a></p>
         <br>
         <div id="buttons">
             <div class="smButton" style="margin-left: 0 !important;"><a target="_blank" href="https://www.linkedin.com/in/dylan-pettijohn-08678b25b/"><img src="Images/Icons/linkedinicon.png"></a></div>
@@ -259,9 +259,16 @@
             doc.style.backgroundColor = color[colorI];
             doc.style.borderColor = color[colorI];
         }
+
+        var docs = document.getElementsByClassName("shiftColor");
+        for (var i = 0; i < docs.length; i++) {
+            let doc = docs.item(i)
+            
+            doc.style.color = color[colorI];
+        }
         
         colorI = (colorI + 1) % color.length;
     }
     change()
-    setInterval(change, 6000)
+    setInterval(change, 10000)
 </script>

@@ -406,16 +406,20 @@ i {
     color: seagreen;
 }
 
+.shiftColor {
+    transition: all 10s linear 0s;
+
+}
+
 .smButton {
     height: 8vh;
     width: 8vh;
     border-radius: 50%;
     display: inline-block;
     margin-left: 2%;
-    transition: all 6s linear 0s;
+    transition: all 10s linear 0s;
     border: 5px solid seagreen;
     background-color: seagreen;
-
 }
 
 #buttons img {
