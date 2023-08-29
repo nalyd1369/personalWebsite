@@ -1,5 +1,5 @@
 :root {  
-    --seagreen: seagreen;
+    --seagreen: rgb(46, 139, 87);
     --violet: rgb(103, 58, 183);
     --gray: rgb(30,30,30);
     --seagreenO: rgba(46, 139, 87, 0.3);
@@ -116,7 +116,7 @@ i {
 }
 
 .coverpage {
-    background-image: url("Images/background.jpg");
+    background-image: url("Images/background.png");
     height: 75%;
     background-position: 50% 22%;
     background-repeat: no-repeat;
@@ -204,7 +204,7 @@ i {
     right: 5%;
     width: 60%;
     padding: 2%;
-    border-radius: 5%;
+    border-radius: 5% 0 0 5%;
     float: right;
     background-color: var(--gray);
 }
@@ -245,6 +245,13 @@ i {
     margin: 0;
     align-items: center;
     overflow-x: hidden;
+    background-image: url(./Images/topoMap.jpg);
+    background-repeat: repeat;
+    background-size: 520px;
+}
+
+#projects #scrollBar {
+    background-color: var(--gray);
 }
 
 #seperator {
@@ -260,6 +267,7 @@ i {
     height: 100%;
     background-color: transparent;
     cursor: pointer;
+    border: none;
 }
 
 #projects h1 {
@@ -297,7 +305,7 @@ i {
 #projects .card{
     position: relative;
     background-image: url(./Images/card-background-dark.png);
-    background-color: rgba(255,255,255,0.03);
+    background-color: rgba(255,255,255);
     border: 2px solid rgb(40,40,40);
     height: 35vh;
     width: 30%;
@@ -310,7 +318,7 @@ i {
 #projects .card:hover {
     background-image: url(./Images/card-background-light.png);
     background-color: rgba(255, 255, 255, 0.02);
-    border: 2px solid rgb(70,70,70);
+    border: 2px solid var(--seagreen);
 }
 
 .card h2 {
@@ -406,9 +414,9 @@ i {
     color: seagreen;
 }
 
+
 .shiftColor {
     transition: all 10s linear 0s;
-
 }
 
 .smButton {
@@ -417,7 +425,6 @@ i {
     border-radius: 50%;
     display: inline-block;
     margin-left: 2%;
-    transition: all 10s linear 0s;
     border: 5px solid seagreen;
     background-color: seagreen;
 }
@@ -437,12 +444,12 @@ i {
     display: block;
     position: fixed;
     color: white;
-    left: 5vw;
-    top: 10vh;
-    width: 90vw;
-    height: 80vh;
+    left: 1vw;
+    top: 1vh;
+    width: 98vw;
+    height: 98vh;
     z-index: 100;
-    background-color: rgb(15, 15, 15);
+    background-color: var(--gray);
     border: 2px solid rgb(0,0,0);
     border-radius: 3%;
     overflow-x: hidden;
@@ -455,7 +462,8 @@ i {
     line-height: 10vh;
     margin: 0;
     font-family: Unbounded;
-    text-align: center;
+    padding-left: 5%;
+    text-align: left;
     color: seagreen;
 }
 
