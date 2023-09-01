@@ -5,6 +5,7 @@
     --seagreenO: rgba(46, 139, 87, 0.3);
     --violetO: rgba(103, 58, 183, 0.3);
     --grayO: rgba(255,255,255,0.02);
+    --hover: #766397;
 }
 
 @font-face {
@@ -67,13 +68,19 @@ li, a, button {
 
 .logo {
     cursor: pointer;
-    color: seagreen;
+    color: var(--seagreen);
     font-size: calc(24px + .5vw);
     max-width: 100%;
     font-family: WaterResistant;
     text-shadow: 2px 2px 2px black;
     font-weight: 700; 
     margin: 0;   
+    transition: all 0.15s ease 0s;
+
+}
+
+.logo:hover {
+    color: var(--hover)
 }
 
 .coverpage a {
@@ -111,7 +118,7 @@ li, a, button {
 }
 
 .collapsed:hover {
-    color: white;
+    color: var(--hover);
 }
 
 #nav-burger {
@@ -422,7 +429,14 @@ i {
 #contact a {
     font-size: calc(20px + .4vw);
     font-weight: 500;
-    color: seagreen;
+    color: var(--seagreen);
+    transition: all .15s ease 0s;
+
+}
+
+#contact a:hover {
+    color: var(--hover);
+    /*var(--seagreen-hover);*/
 }
 
 
@@ -438,6 +452,12 @@ i {
     margin-left: 2%;
     border: 5px solid seagreen;
     background-color: seagreen;
+    transition: all .15s ease 0s;
+}
+
+.smButton:hover {
+    background-color: var(--hover);
+    border-color: var(--hover);
 }
 
 #buttons img {
@@ -568,7 +588,7 @@ i {
 
 
 /*Smaller screen display support*/
-@media (max-width: 870px) {
+@media (max-width: 1230px) {
     #skills h1 {
         position: absolute;
         left: 0;
