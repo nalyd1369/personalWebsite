@@ -8,12 +8,20 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="icon" type="image/png" href="./Images/Icons/favicon.png">
+    <link href="hamburgers.css" rel="stylesheet">
 </head>
 <body>
     <div class="coverpage">
         <div id="sticky">
         <header id="header">
             <a href="#"><p class="logo">Dylan Pettijohn</p></a>
+            <div id="nav-burger">
+                <button id="nav-burger-menu" class="hamburger hamburger--emphatic" type="button">
+                    <span class="hamburger-box">
+                    <span id="burger" class="hamburger-inner"></span>
+                    </span>
+                </button>
+            </div>
             <nav>
                 <ul class="nav-links">
                     <li><a class="expanded" href="#about">About</a></li>
@@ -58,8 +66,8 @@
     </div>
 
     <div id="skills">
-        <div id="tiles"></div>
-        <h1><u>My skills</u></h1>
+        <h1>My skills</h1>
+        <div id="tiles"></div>    
         <div id="skillsBox">
             <div class="skill">
                 <img src="./Images/javascript.png">
@@ -91,11 +99,11 @@
             </div>
             <div class="skill">
                 <img src="./Images/pc.png">
-                <p class="descrip">I'm proffecient in PC hardware and I've build a couple computers, including the one I'm developing the website on!</p>
+                <p class="descrip">I'm proffecient in PC hardware and I've built a couple computers, including the one I'm developing the website on!</p>
             </div>
             <div class="skill">
                 <img src="./Images/archery.png">
-                <p class="descrip">I participated in Archery for 3 years, competing on the state team and placing top 5%.</p>
+                <p class="descrip">I participated in Archery for 4 years, competing on the state team and placing top 5%.</p>
             </div>  
         </div>
     </div>
@@ -236,15 +244,19 @@
 
     function scrollFunction() {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-        document.getElementById("header").style.cssText = "background-color:rgba(30,30,30,1);height: 8vh;padding: 0px 14% 0px;";
+        document.getElementById("header").style.cssText = "background-color:rgba(30,30,30,1);height: 6vh;";
+        let collection = document.getElementById("burger").classList.add("down")
         
+
         let array = document.querySelectorAll('.nav-links li a');
         for (var e = 0; e < array.length; e++) {
             array[e].classList.add("collapsed")
             array[e].classList.remove("expanded")
         }
     } else {
-        document.getElementById("header").style.cssText = "background-color:transparent;height: 5vh;padding: 1% 14% 0px";
+        document.getElementById("header").style.cssText = "background-color:transparent;height: 7vh;";
+        let collection = document.getElementById("burger").classList.remove("down")
+
         
         let array = document.querySelectorAll('.nav-links li a');
         for (var e = 0; e < array.length; e++) {
@@ -300,4 +312,18 @@
     }
     change()
     setInterval(change, 10000)
+</script>
+
+<script>
+    toggled = false
+    element = document.getElementById('nav-burger-menu')
+    element.onclick = function() {
+        if (toggled == false) {
+            toggled = true
+            element.classList.add("is-active")
+        } else {
+            toggled = false
+            element.classList.remove("is-active")
+        }
+    }
 </script>

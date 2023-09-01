@@ -52,9 +52,9 @@ li, a, button {
 .coverpage header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 1% 14% 0px;
-    height: 8vh;
+    align-items: baseline;
+    padding: 1% 1% 0px !important;
+    height: 7vh;
     transition: all 0.15s ease 0s;
 }
 
@@ -69,12 +69,16 @@ li, a, button {
     cursor: pointer;
     color: seagreen;
     font-size: calc(24px + .5vw);
-    min-width: 275px;
+    max-width: 100%;
     font-family: WaterResistant;
     text-shadow: 2px 2px 2px black;
-    font-weight: 700;
-    line-height: 5vh;
+    font-weight: 700; 
+    margin: 0;   
+}
 
+.coverpage a {
+    padding-left: 5%;
+    min-width: 250px;
 }
 
 .nav-links {
@@ -108,6 +112,10 @@ li, a, button {
 
 .collapsed:hover {
     color: white;
+}
+
+#nav-burger {
+    display: none;
 }
 
 i {
@@ -180,11 +188,12 @@ i {
     position: absolute;
     top: 45px;
     left: 60px;
-    z-index: -1;
+    z-index: 1;
     margin: 0;
     color: seagreen;
     font-size: calc(24px + 2vw);
     font-family: Unbounded;
+    text-decoration-line: underline;
 }
 
 #skillsBox {
@@ -247,7 +256,7 @@ i {
     overflow-x: hidden;
     background-image: url(./Images/topoMap.jpg);
     background-repeat: repeat;
-    background-size: 520px;
+    background-size: 800px;
 }
 
 #projects #scrollBar {
@@ -310,6 +319,7 @@ i {
     height: 35vh;
     width: 30%;
     min-width: 400px;
+    min-height: 250px;
     border-radius: 10px;
     transition: all 0.5s;
     overflow: hidden;
@@ -387,6 +397,7 @@ i {
     cursor: default;
     height: 50vh;
     min-height: 450px;
+    max-height: 550px;
     background-color: black;
     background-image: url(./Images/map-image.png);
     vertical-align: middle;
@@ -554,6 +565,53 @@ i {
     inset: 0.5px;
     position: absolute;
 }
+
+
+/*Smaller screen display support*/
+@media (max-width: 870px) {
+    #skills h1 {
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding: 0;
+        padding-bottom: 2vh;
+        width: 100%;
+        text-align: center;
+        font-size: calc(32px + 2vw);
+        text-decoration-line: none;
+    }    
+
+    #skillsBox {
+        top: 10%;
+        bottom: 5%;
+        left: 8%;
+        right: 10%;
+        width: 80%;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .coverpage header {
+        justify-content: center;
+        height: 7vh;
+        min-height: 50px;
+    }
+
+    .coverpage header a {
+        flex-grow: 1;
+    }
+
+    #nav-burger {
+        display: block;
+        max-width: 90px;
+        float: right;
+        padding-right: 5%;
+        flex-grow: 0;
+    }
+}
+
 
 /*magic text animation*/
 .magic {
