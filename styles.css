@@ -623,6 +623,7 @@ i {
         var(--seagreen)
     );
     background-size: 200%;
+    background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     white-space: nowrap;
