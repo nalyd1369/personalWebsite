@@ -592,6 +592,10 @@ i {
 
 /*Smaller screen display support*/
 @media (max-width: 1135px) {
+    .coverpage {
+        background-image: url("Images/background-compressed.png");
+    }
+
     #skills h1 {
         position: absolute;
         left: 0;
