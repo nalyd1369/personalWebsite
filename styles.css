@@ -631,7 +631,6 @@ i {
     }
 
     #burger-nav-links.active{
-        transition: all .15s ease 0s;
         width: 200%;
         height: auto;
         overflow: visible;
@@ -648,9 +647,15 @@ i {
 
     #burger-nav-links li {
         padding-top: 5px;
+        
     }
     #burger-nav-links li a{
         color: var(--seagreen);
+        transition: all .15s ease .15s;
+        opacity: 0;
+    }
+    #burger-nav-links.active li a {
+        opacity: 1;
     }
     #burger-nav-links li a:hover{
         color: var(--hover);
