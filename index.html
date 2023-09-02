@@ -21,6 +21,13 @@
                     <span id="burger" class="hamburger-inner"></span>
                     </span>
                 </button>
+                <ul id="burger-nav-links">
+                    <li><a class="expanded" href="#about">About</a></li>
+                    <li><a class="expanded" href="#skills">Skills</a></li>
+                    <li><a class="expanded" href="#projects">Projects</a></li>
+                    <li><a class="expanded" href="#contact">Contact</a></li>
+                    <li><a href="./Resume.pdf" download="Dylan Pettijohn's Resume" class="expanded"><i id="resumeIcon" class="material-symbols-outlined">download</i>Resume</a></li>
+                </ul>
             </div>
             <nav>
                 <ul class="nav-links">
@@ -28,7 +35,7 @@
                     <li><a class="expanded" href="#skills">Skills</a></li>
                     <li><a class="expanded" href="#projects">Projects</a></li>
                     <li><a class="expanded" href="#contact">Contact</a></li>
-                    <li><a href="./Resume.pdf" download="Dylan Pettijohn's Resume" class="expanded"><i class="material-symbols-outlined">download</i>Resume</a></li>
+                    <li><a href="./Resume.pdf" download="Dylan Pettijohn's Resume" class="expanded"><i id="resumeIcon" class="material-symbols-outlined">download</i>Resume</a></li>
                 </ul>
             </nav>
         </header>
@@ -244,8 +251,11 @@
 
     function scrollFunction() {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-        document.getElementById("header").style.cssText = "background-color:rgba(30,30,30,1);height: 6vh;";
-        let collection = document.getElementById("burger").classList.add("down")
+        let header = document.getElementById("header");
+        header.style.cssText = "background-color:rgba(30,30,30,1);height: 6vh;";
+        header.classList.add("collapsed")
+        
+        document.getElementById("burger").classList.add("down")
         
 
         let array = document.querySelectorAll('.nav-links li a');
@@ -254,8 +264,15 @@
             array[e].classList.remove("expanded")
         }
     } else {
-        document.getElementById("header").style.cssText = "background-color:transparent;height: 7vh;";
-        let collection = document.getElementById("burger").classList.remove("down")
+        let header = document.getElementById("header");
+        header.style.cssText = "background-color:transparent;height: 7vh;";
+        header.classList.remove("collapsed")
+
+        let burgerMenu = document.getElementById("nav-burger-menu");
+        if (!burgerMenu.classList.contains("is-active")) {
+            document.getElementById("burger").classList.remove("down")
+        }
+        
 
         
         let array = document.querySelectorAll('.nav-links li a');
@@ -316,14 +333,26 @@
 
 <script>
     toggled = false
-    element = document.getElementById('nav-burger-menu')
+    element = document.getElementById('nav-burger-menu');
+    burger = document.getElementById("burger");
+    navLinks = document.getElementById('burger-nav-links');
+    header = document.getElementById("header");
+
     element.onclick = function() {
         if (toggled == false) {
             toggled = true
             element.classList.add("is-active")
+            navLinks.classList.add("active")
+            burger.classList.add("down")
         } else {
             toggled = false
+            navLinks.classList.remove("active")
             element.classList.remove("is-active")
+
+            console.log(document.body.scrollTop)
+            if (!header.classList.contains("collapsed")) {
+                burger.classList.remove("down")
+            }
         }
     }
 </script>

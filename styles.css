@@ -62,7 +62,7 @@ li, a, button {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1;
+    z-index: 2;
 }
 
 .logo {
@@ -78,12 +78,15 @@ li, a, button {
 
 .coverpage a {
     padding-left: 5%;
-    min-width: 250px;
 }
 
 .nav-links {
     list-style: none;
     margin: 0;
+}
+
+.nav-links #resumeIcon {
+    display: inline;
 }
 
 .nav-links li {
@@ -568,7 +571,7 @@ i {
 
 
 /*Smaller screen display support*/
-@media (max-width: 870px) {
+@media (max-width: 1135px) {
     #skills h1 {
         position: absolute;
         left: 0;
@@ -593,6 +596,43 @@ i {
         display: none;
     }
 
+    #burger-nav-links {
+        transition: all .15s ease 0s;
+        background-color: var(--gray);
+        width: 0px;
+        height: 0px;
+        overflow: hidden;
+        position: absolute;
+        top: -15px;
+        right: 0;
+        list-style: none;
+        z-index: 2;
+        margin: 0px;
+    }
+
+    #burger-nav-links.active{
+        transition: all .15s ease 0s;
+        width: 200%;
+        height: auto;
+        overflow: visible;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 0;
+        padding: 10px 90px 15px 15px;
+        background-position-y: -20px;
+        border: 2px solid var(--seagreen);
+        border-radius: 2%;
+    }
+
+
+    #burger-nav-links li {
+        padding-top: 5px;
+    }
+    #burger-nav-links li a{
+        color: var(--seagreen);
+    }
+
     .coverpage header {
         justify-content: center;
         height: 7vh;
@@ -605,10 +645,16 @@ i {
 
     #nav-burger {
         display: block;
+        position: relative;
         max-width: 90px;
         float: right;
-        padding-right: 5%;
+        margin-right: 5%;
         flex-grow: 0;
+    }
+
+    #nav-burger-menu {
+        z-index: 3;
+        position: relative;
     }
 }
 
