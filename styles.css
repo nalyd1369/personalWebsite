@@ -652,6 +652,9 @@ i {
     #burger-nav-links li a{
         color: var(--seagreen);
     }
+    #burger-nav-links li a:hover{
+        color: var(--hover);
+    }
 
     .coverpage header {
         justify-content: center;
